@@ -34,10 +34,10 @@ function App() {
      </div>
      <div className="coin-header">
        <h4 style={{marginLeft: '3rem', marginRight: '6rem'}}>Coin</h4>
-       <h4 style={{marginRight: '5rem'}}>Symbol</h4>
-       <h4 style={{marginRight: '4.5rem'}}>Volume</h4>
-       <h4 style={{marginRight: '3.5rem'}}>Current Price</h4>
-       <h4 style={{marginRight: '4.5rem'}}>Change</h4>
+       <h4 style={{marginRight: '4rem'}}>Symbol</h4>
+       <h4 style={{marginRight: '4rem'}}>Current Price</h4>
+       <h4 style={{marginRight: '5rem'}}>Volume</h4>
+       <h4 style={{marginRight: '5rem'}}>Change</h4>
        <h4>Market Cap</h4>
      </div>
      {filteredCoins.map(coin => {
