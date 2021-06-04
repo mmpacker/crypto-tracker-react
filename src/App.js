@@ -26,10 +26,19 @@ function App() {
   return (
     <div className="coin-app">
      <div className="coin-search">
-       <h1 className="coin-text">Search a Currency</h1>
+       <h1 className="coin-text">CryptoCurrency Tracker</h1>
+       <h4 className="coin-text">Powered by <a href="https://www.coingecko.com/en/api#explore-api" target="_blank">CoinGecko</a></h4>
        <form>
-         <input className="coin-input" type="text" placeholder="Search" onChange={handleChange} />
+         <input className="coin-input" type="text" placeholder="Search a Currency by Name" onChange={handleChange} />
        </form>
+     </div>
+     <div className="coin-header">
+       <h4 style={{marginLeft: '3rem', marginRight: '6rem'}}>Coin</h4>
+       <h4 style={{marginRight: '5rem'}}>Symbol</h4>
+       <h4 style={{marginRight: '4.5rem'}}>Volume</h4>
+       <h4 style={{marginRight: '3.5rem'}}>Current Price</h4>
+       <h4 style={{marginRight: '4.5rem'}}>Change</h4>
+       <h4>Market Cap</h4>
      </div>
      {filteredCoins.map(coin => {
        return (
